@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/seven-segment" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Card - Reader/Writer</title>
+
+ 
+
+</head>
+
+
+
+<body oncontextmenu="return false;">
+    
+    <div id="main_screen">
+
+
+        <div id="container">
+
+            <div class="cartao_container" id="cartao_container_mais"></div>
+
+
+            <div id="maquina" slot-add="0" slot-remove="0">
+                
+                <div id="maquina_lcd">
+                    
+                    <div id="maquina_lcd_digitos"></div>
+                    
+                    <div id="maquina_lcd_segmentos">
+                        <div id="maquina_lcd_segmento_add">&CirclePlus;</div>
+                        <div id="maquina_lcd_segmento_remove">&CircleMinus;</div>
+                        <div id="maquina_lcd_segmento_K">K</div>
+                        <div id="maquina_lcd_segmento_M">M</div> 
+                    </div>
+
+                </div>
+
+
+                <div id="reset">
+                    <div id="reset_button" ondblclick="resetar()"></div> 
+                </div>
+
+
+                <div id="maquina_teclado">
+                    <div class="tecla tecla_M">M</div>
+                    <div class="tecla tecla_seta">&leftarrowtail;</div>
+                    <div class="tecla tecla_K">K</div> 
+                    <div class="tecla">7</div>
+                    <div class="tecla">8</div>
+                    <div class="tecla">9</div> 
+                    <div class="tecla">4</div>
+                    <div class="tecla">5</div>
+                    <div class="tecla">6</div> 
+                    <div class="tecla">1</div>
+                    <div class="tecla">2</div>
+                    <div class="tecla">3</div> 
+                    <div class="tecla tecla_C">C</div>
+                    <div class="tecla">0</div>
+                    <div class="tecla tecla_ponto">.</div>
+                </div>
+
+            </div>
+
+
+            <div class="cartao_container" id="cartao_container_menos"></div>
+
+
+        </div>
+
+
+
+        <div id="lista_cartoes">
+            <div class="cartao_lista_item">1</div>
+            <div class="cartao_lista_item">2</div>
+            <div class="cartao_lista_item">3</div>
+            <div class="cartao_lista_item">4</div>
+            <div class="cartao_lista_item">5</div>
+            <div class="cartao_lista_item">6</div>
+        </div>
+        
+
+    </div>
+
+
+     
+    <script src="script.js"></script>
+
+</body>
+</html>
